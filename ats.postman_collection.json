@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "20e2b911-c7d1-4e79-b7c1-ff030b970c6e",
+		"name": "ats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369985"
+	},
+	"item": [
+		{
+			"name": "Admin-register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\" : \"sara@example.com\",\r\n   \"password\" :\"Admin@0111\",\r\n   \"name\" : \"Saranya\",\r\n   \"phone\" : \"9876543210\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8021/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "AdminRegister",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add-plane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"registrationNumber\": \"AB1278\",\r\n    \"model\": \"Bo 73734\",\r\n    \"capacity\": 200,\r\n    \"manufacturer\": \"Boei\"\r\n    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/addplane",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"addplane"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-airport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"airportName\": \"Singapore International Airport\",\r\n    \"countryId\": \"SGP01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8041/addport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"addport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "display-airport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/display",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"display"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sash@example.com\",\r\n    \"password\": \"Admin@1253\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8011/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "airport-create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"airportName\": \"John F. Kennedy International Airport\",\r\n  \"countryId\": \"US\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8041/addport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"addport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByID-airport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByCode-airport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/code/A0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"code",
+						"A0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById-airport",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookingId\": \"B0002\",\r\n  \"passengerId\": \"P1267\",\r\n  \"scheduleId\": \"S4560\",\r\n  \"bookingDate\": \"2024-08-25T15:00:00Z\",\r\n  \"seatNumber\": 17,\r\n  \"ticketCost\": 153.00,\r\n  \"totalAmount\": 153.00\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8061/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8061",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "display-booking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8061/show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8061",
+					"path": [
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById-booking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8061/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8061",
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

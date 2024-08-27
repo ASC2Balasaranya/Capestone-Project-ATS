@@ -22,7 +22,7 @@ public class AirportController {
         return ResponseEntity.ok(createdAirport);
     }
 
-    @GetMapping
+    @GetMapping("/display")
     public ResponseEntity<List<Airport>> getAllAirports() {
         List<Airport> airports = airportService.getAllAirports();
         return ResponseEntity.ok(airports);

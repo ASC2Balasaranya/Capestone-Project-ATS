@@ -1,6 +1,12 @@
 
+
 package com.demo.entity;
+
+
+
 import javax.persistence.*;
+
+
 @Entity
 @Table(name="Users")
 public class User {
